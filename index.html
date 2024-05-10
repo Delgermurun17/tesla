@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/avenir" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0%;
+        }
+
+        header {
+            height: 56px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            gap: 575px;
+            position: fixed;
+            font-family: 'Avenir', sans-serif;
+            background: #00000005;
+
+
+        }
+
+        .menu-item {
+            text-decoration: none;
+            color: white;
+            margin-left: 32px;
+        }
+
+        .last-item {
+            text-decoration: none;
+            color: white;
+            margin-left: 32px;
+            font-size: 12px;
+        }
+
+        #logo {
+            margin-top: 10px;
+        }
+
+        button {
+            height: 40px;
+            width: 264px;
+            border: none;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .centered-button {
+            justify-content: center;
+        }
+
+        .section {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            height: 100vh;
+            background-size: cover;
+        }
+
+        #section-1 {}
+
+        #section-2 {
+            background-image: url(image2.png);
+        }
+
+        #section-3 {
+            background-image: url(image3.png);
+        }
+
+        #section-4 {
+
+            background-image: url(image4.png);
+
+        }
+
+        #section-5 {
+
+            background-image: url(image5.png);
+
+        }
+
+        #section-6 {}
+
+        #section-7 {
+            background-image: url(image6.png);
+        }
+
+        #section-8 {
+            background-image: url(image7.png);
+        }
+
+        #section-9 {
+            background-image: url(image8.png);
+        }
+
+        #section-10 {
+            background-image: url(image9.png);
+        }
+
+        #btn-white {
+            background: rgba(244, 244, 244, 0.8);
+            backdrop-filter: blud(4px);
+            color: black;
+        }
+
+        #btn-black {
+            background: rgba(23, 26, 32, 0.65);
+            backdrop-filter: blur(4px);
+            color: #FFFFFF;
+        }
+
+        .desc {
+            margin-top: 128px;
+            color: #FFFFFF;
+            font-weight: 500;
+            text-align: center;
+        }
+
+        .desc-2 {
+            margin-top: 128px;
+            color: black;
+            font-weight: 500;
+            text-align: center;
+        }
+
+        .content {
+            font-family: 'Avenir', sans-serif;
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+        }
+
+        .btn-container {
+            display: flex;
+            gap: 24px;
+        }
+
+        .model-title {
+            font-family: 'Montserrat';
+            font-size: 40px;
+            line-height: 48px;
+        }
+
+        .model-price {
+            font-family: 'Avenir', sans-serif;
+
+            font-size: 20px;
+            line-height: 20px;
+
+        }
+
+        .model-p {
+            font-size: 12px;
+        }
+
+        .text-container {
+            color: white;
+            text-align: center;
+            font-size: 12px;
+        }
+
+        .transparent-button {
+            background-color: transparent;
+            border: 3px solid #FFFFFF;
+            color: white;
+
+        }
+
+        .video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+        }
+
+        .video-source {
+            width: 100%;
+            height: 100%;
+        }
+
+        .absolute {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+        }
+
+        .underline {
+            text-decoration: underline;
+        }
+    </style>
+    <title>Tesla</title>
+</head>
+
+<body>
+    <header><img src="Tesla Logo.png" alt="Tesla Logo" id="Logo">
+        <span id="menus">
+            <a class="menu-item" href="#Vehicles">Vehicles</a>
+            <a class="menu-item" href="#Energy">Energy</a>
+            <a class="menu-item" href="#Charging">Charging</a>
+            <a class="menu-item" href="#Discover">Discover</a>
+            <a class="menu-item" href="#Shop">Shop</a>
+        </span>
+    </header>
+
+    <section id="section-1" class="section">
+        <video class="video" autoplay loop muted>
+            <source src="video.mp4" type="video/mp4" />
+        </video>
+        <div class="absolute">
+            <div class="desc">
+                <h class="model-title">Model Y</h>
+                <p class="model-price">From $31,890*</p>
+                <p class="model-p">After Federal Tax Credit & Est. Gas Saving</p>
+            </div>
+            <div class="content">
+                <div class="btn-container">
+                    <button id="btn-white">Shop Available</button>
+                    <button id="btn-black">Demo Drive</button>
+                </div>
+                <span class="text-container">Price before incentives and savings is $42,990, excluding taxes and fees.
+                    Subject to change.
+                    <br>
+                    <a class="underline">Learn about est. gas savings.</a>
+                </span>
+                <span></span>
+            </div>
+        </div>
+    </section>
+    <section id="section-2" class="section">
+        <div class="desc-2">
+            <h1 class="model-title">Brand New Model 3</h1>
+            <h5s class="model-price">Lease starting at $329/mo*</h5>
+        </div>
+        <div class="content">
+            <div class="btn-container">
+                <button id="btn-white">Custom Order</button>
+                <button id="btn-black">Demo Drive</button>
+            </div>
+            <span class="text-container">*Excludes taxes and fees with price subject to change. Available in select
+                states.
+                <br>
+                <a class="underline">See details</a>
+            </span>
+            <span></span>
+        </div>
+    </section>
+    <section id="section-3" class="section">
+        <div class="desc-2">
+            <h1 class="model-title">Model X</h1>
+            <h5s class="model-price">From $68,590*</h5>
+                <p class="model-p">After Federal Tax Credit & Est. Gas Savings</p>
+        </div>
+        <div class="content">
+            <div class="btn-container">
+                <button id="btn-white">Custom Order</button>
+                <button id="btn-black">Demo Drive</button>
+            </div>
+            <span class="text-container">*Price before incentives and savings is $79,990, excluding taxes and fees.
+                Subject to change.
+                <br>
+                <a class="underline">Learn about est. gas savings.</a>
+            </span>
+            <span></span>
+        </div>
+    </section>
+    <section id="section-4" class="section">
+        <div class="desc-2">
+            <h1 class="model-title">Model S</h1>
+            <h5s class="model-price">From $71,090*</h5>
+                <p class="model-p">After Est. Gas Savings</p>
+        </div>
+        <div class="content">
+            <div class="btn-container">
+                <button id="btn-white">Custom Order</button>
+                <button id="btn-black">Demo Drive</button>
+            </div>
+            <span class="text-container">*Price before savings is $74,990, excluding taxes and fees. Subject to change.
+                <br>
+                <a class="underline">Learn about est. gas savings.</a>
+            </span>
+            <span></span>
+        </div>
+    </section>
+    <section id="section-5" class="section">
+        <div></div>
+        <div class="content">
+
+            <div class="btn-container">
+                <button id="btn-white">Custom Order</button>
+                <button id="btn-black">Demo Drive</button>
+            </div>
+            <span></span>
+            <span></span>
+        </div>
+    </section>
+    <section id="section-6" class="section">
+        <video class="video" autoplay loop muted>
+            <source src="video2.webm" type="video/webm" />
+        </video>
+        <div class="absolute">
+            <div class="desc">
+                <h1 class="model-title">Experience Tesla</h1>
+                <p class="model-p">Schedule a Demo Drive Today</p>
+            </div>
+            <div class="content">
+                <div class="btn-container">
+                    <button class="transparent-button">Learn More</button>
+                </div>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </section>
+    <section id="section-7" class="section">
+        <div class="desc">
+            <h1 class="model-title">Solar Panels</h1>
+            <p class="model-p">Schedule a Virtual Consultation</p>
+        </div>
+        <div class="content">
+            <div class="btn-container">
+                <button id="btn-white">Order Now</button>
+                <button id="btn-black">Learn More</button>
+            </div>
+            <span></span>
+            <span></span>
+        </div>
+    </section>
+    <section id="section-8" class="section">
+        <div class="desc-2">
+            <h1 class="model-title">Solar Roof</h1>
+            <p class="model-p">Produce Clean Energy From Your Roof</p>
+        </div>
+        <div class="content">
+            <div class="btn-container">
+                <button id="btn-white">Order Now</button>
+                <button id="btn-black">Learn More</button>
+            </div>
+            <span></span>
+            <span></span>
+        </div>
+    </section>
+    <section id="section-9" class="section">
+        <div class="desc-2">
+            <h1 class="model-title">Powerwall</h1>
+        </div>
+        <div class="content">
+            <div class="btn-container">
+                <button id="btn-white">Order Now</button>
+                <button id="btn-black">Learn More</button>
+            </div>
+            <span></span>
+            <span></span>
+        </div>
+    </section>
+    <section id="section-10" class="section">
+        <div class="desc-2">
+            <h1 class="model-title">Accessories</h1>
+        </div>
+        <div class="content">
+            <div class="btn-container centered-button">
+                <button id="btn-white">Shop Now</button>
+            </div>
+            <span id="last">
+                <a class="last-item" href="#Tesla © 2024">Tesla © 2024</a>
+                <a class="last-item" href="#Privacy & Legal">Privacy & Legal</a>
+                <a class="last-item" href="#Vehicle Recalls">Vehicle Recalls</a>
+                <a class="last-item" href="#Contact">Contact</a>
+                <a class="last-item" href="#News">News</a>
+                <a class="last-item" href="#Get Updates">Get Updates</a>
+                <a class="last-item" href="#Locations">Locations</a>
+
+
+            </span>
+            <span></span>
+        </div>
+    </section>
+</body>
+
+</html>
